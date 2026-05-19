@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login & Sign In</title>
+<link rel="stylesheet" href="sin.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav>
+
+    <h1>Modern Web</h1>
+
+    <div class="btns">
+        <button onclick="loginOpen()">Login</button>
+        <button onclick="signinOpen()">Sign In</button>
+    </div>
+
+</nav>
+
+<!-- Main -->
+
+<div class="container">
+
+    <!-- Welcome -->
+
+    <div class="welcome" id="welcome">
+        <h1>Welcome 😍</h1>
+        <p>Click Login or Sign In Button</p>
+    </div>
+
+    <!-- Login Form -->
+
+    <div class="form-box" id="loginForm">
+
+        <h2>Login Form</h2>
+
+        <input type="email" placeholder="Enter Email">
+
+        <input type="password" placeholder="Enter Password">
+
+        <button>Login</button>
+
+    </div>
+
+    <!-- Sign In Form -->
+
+    <div class="form-box" id="signinForm">
+
+        <h2>Sign In Form</h2>
+
+        <input type="text" placeholder="Enter Name">
+
+        <input type="email" placeholder="Enter Email">
+
+        <input type="password" placeholder="Create Password">
+
+        <button>Sign In</button>
+
+    </div>
+
+</div>
+
+<script>
+
+function loginOpen(){
+
+    document.getElementById("loginForm").style.display="block";
+    document.getElementById("signinForm").style.display="none";
+    document.getElementById("welcome").style.display="none";
+}
+
+function signinOpen(){
+
+    document.getElementById("signinForm").style.display="block";
+    document.getElementById("loginForm").style.display="none";
+    document.getElementById("welcome").style.display="none";
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+.logo{
+   width: 5rem;
+   height: 5rem;
+}
+/* NAVBAR */
+.Navbar{
+    background: #0f5233;
+    padding: 15px 5%;
+
+    display: flex;
+    align-items: center;
+}
+
+/* LOGO */
+.Navbar h1{
+    color: white;
+    font-size: 28px;
+}
+
+/* RIGHT SIDE */
+.Navbar a,
+.Navbar button{
+    margin-left: 15px;
+}
+
+/* Push links to right */
+.Navbar a:first-of-type{
+    margin-left: auto;
+}
+
+/* LINKS */
+.Navbar a{
+    color: white;
+    text-decoration: none;
+
+    padding: 10px 15px;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+/* HOVER */
+.Navbar a:hover{
+    background: rgba(255,255,255,0.15);
+}
+
+/* BUTTON */
+.Navbar button{
+    background: #f0a500;
+    color: black;
+
+    border: none;
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.Navbar button:hover{
+    background: #ffbf1f;
+}
+nav{
+    background: linear-gradient(135deg,#0f5233,#1a7a4a);
+
+    color: white;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 80px 8%;
+}
+
+/* HEADING */
+nav h2{
+    font-size: 60px;
+    max-width: 700px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+/* PARAGRAPH */
+nav p{
+    font-size: 18px;
+
+    max-width: 600px;
+
+    line-height: 1.8;
+
+    color: rgba(255,255,255,0.8);
+
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+nav button{
+    width: fit-content;
+
+    padding: 14px 28px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-bottom: 15px;
+
+    transition: 0.3s;
+}
+
+/* FIRST BUTTON */
+nav button:first-of-type{
+    background: #f0a500;
+    color: black;
+}
+
+/* SECOND BUTTON */
+nav button:last-of-type{
+    background: transparent;
+    color: white;
+
+    border: 2px solid white;
+}
+
+/* HOVER */
+nav button:hover{
+    transform: translateY(-3px);
+}
+
+
